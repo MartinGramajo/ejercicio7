@@ -1,10 +1,23 @@
 import "./App.css";
+import EmpleadoList from "./components/EmpleadoList";
 
 function App() {
   return (
-    <>
-      <h1>proyecto limpio</h1>
-    </>
+    <div className="bg-app d-flex flex-column min-vh-100">
+      <section className="container">
+        <h1 className="display-5 text-center py-5 pb-2 text-white">
+          <h1 className="text-center py-5"> Lista de empleados </h1>
+        </h1>
+      </section>
+
+      <EmpleadoList />
+      <footer className="py-5 mt-auto bg-dark">
+        <h5 className="text-center text-white">
+          {" "}
+          © Todos los derechos reservados
+        </h5>
+      </footer>
+    </div>
   );
 }
 
