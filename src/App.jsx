@@ -5,9 +5,9 @@ function App() {
   return (
     <div className="bg-app d-flex flex-column min-vh-100">
       <section className="container">
-        <h1 className="display-5 text-center py-5 pb-2 text-white">
+        <div className="display-5 text-center py-5 pb-2 text-white">
           <h1 className="text-center py-5"> Lista de empleados </h1>
-        </h1>
+        </div>
       </section>
 
       <EmpleadoList />
