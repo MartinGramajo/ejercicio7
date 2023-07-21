@@ -1,9 +1,10 @@
 import "./App.css";
+import EmpleadoList from "./components/EmpleadoList";
 
 function App() {
   return (
     <>
-      <h1>proyecto limpio</h1>
+      <EmpleadoList />
     </>
   );
 }
