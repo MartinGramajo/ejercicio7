@@ -1,11 +1,27 @@
-const EmpleadoRow = () => {
+import { Badge, Image } from "react-bootstrap";
+
+const EmpleadoRow = ({ empleado }) => {
   return (
-    <article className="container w-25 bg-danger">
-      <div className="d-flex justify-content-around">
-        <div>foto</div>
-        <div>
-          <h4>dato</h4>
-          <h5>dato 2 y dato 3 </h5>
+    <article className="container item-list py-2">
+      <div className="d-flex">
+        <div className="d-flex justify-content-center align-items-center ">
+          <Image
+            className="imagen-perfil"
+            src={empleado.pic}
+            roundedCircle
+            alt="perfil empleado"
+          />
+        </div>
+        <div className="ms-3">
+          <h4>{empleado.fullName}</h4>
+          <div className="d-flex">
+            <h6 className="me-4">CEO</h6>
+            <span>
+              <Badge pill bg="info">
+                Info
+              </Badge>
+            </span>
+          </div>
         </div>
       </div>
     </article>
